@@ -1,0 +1,437 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior:smooth ;
+	font-family: 'Poppins', sans-serif;
+}
+#loading{
+	position: fixed;
+	background: url('img/3.gif');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	padding: 40px 100px;
+	justify-content: space-between;
+	transition: 0.5s;
+}
+header.sticky{
+      	background: #fff;
+      	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        padding: 10px 100px;
+
+      }
+      header.sticky .logo{
+      	color: #111;
+      }
+      header.sticky ul li a{
+      	color: #111;
+      }
+header .logo{
+	color: #fff;
+font-weight: 600;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+line-height: 1.5em;
+ padding: 10px 20px;
+text-decoration: none;
+ list-style: none;
+ text-shadow: 0 10px 6px #222;
+}
+header  ul{
+	position: relative;
+	display: flex;
+}
+header  ul li{
+	position: relative;
+	 list-style: none;
+}
+header  ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 0 30px;
+	text-decoration: none;
+	font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:1em;
+    transition:all 0.3s linear;
+}
+header ul li a::before{
+	content: " ";
+	position: absolute;
+	top: 110%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	border-bottom: 2px solid #2196f3;
+	transition:all 0.3s linear;
+}
+header ul li a:hover::before{
+	width: 100%;
+}
+header ul li a:hover{
+	color: red;
+}
+
+
+#banner{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: url('img/1.jpg');
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	padding: 30px 80px;
+	user-select: none;
+}
+#banner .textbx h2{
+color: #fff;
+font-weight: 600;
+font-size: 3em;
+text-transform: uppercase;
+letter-spacing: 2px;
+line-height: 1.5em;
+}
+#banner h2 span{
+    font-size: 1.6em;
+    font-weight: 700;
+    animation: anime 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes anime{
+	from{
+ text-shadow:none;
+	}
+	to{
+ text-shadow:    0 0 10px gold,
+    			 0 0 15px gold,
+    			 0 0 20px gold,
+    			 0 0 30px gold;
+	}
+}
+
+
+section{
+    padding: 100px;
+}
+#banner .textbx h3{
+color: #fff;
+font-weight: 400;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+line-height: 1.5em;
+margin: 20px 0 30px;
+}
+.btn{
+	position: relative;
+	background: #2196f3;
+	text-decoration: none;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    list-style: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 1.6em;
+    box-shadow: 0px 5px 5px 2px #111;
+    border-radius: 20px;
+}
+
+/* <!-- about section --> */
+#about{
+	background: linear-gradient(to top,green,lightblue );
+	user-select: none;
+}
+.heading{
+	width: 100%;
+	text-align: center;
+	color: #111;
+	text-transform: uppercase;
+	user-select: none;
+	margin-bottom: 90px;
+}
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+.heading h2{
+font-weight: 600;
+font-size: 2.6em;
+text-transform: uppercase;
+}
+.content h3{
+margin-bottom: 10px;
+font-size: 2.3em;
+text-transform: capitalize;
+}
+.contentbx{
+	padding-right: 60px;
+}
+.img{
+	max-width: 100%;
+}
+.w50{
+	min-width: 50%;
+}
+/* services start here */
+#services{
+    background: #111;
+}
+.heading.white{
+ color:#fff;
+}
+#services .content{
+display: flex;
+justify-content : center ;
+flex-wrap: wrap;
+flex-direction: row;
+}
+#services .content .servicebx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#services .content .servicebx:hover{
+    background: #2196f3;
+}
+#services .content .servicebx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+#services .content .servicebx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* contact start here */
+#contact{
+    background: #111;
+}
+.formbx{
+    min-width: 60%;
+}
+.formbx form{
+    display: flex;
+    flex-direction: column;
+}
+.formbx form h3,
+.contactinfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formbx form input,
+.formbx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formbx form textarea{
+    min-height: 200px;
+}
+.formbx form input::placeholder,
+.formbx form textarea::placeholder{
+    color: #999;
+}
+.formbx form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactinfo{
+    min-width: 40%;
+}
+.contactinfobx{
+    position: relative;
+}
+.contactinfobx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactinfobx .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+}
+.contactinfobx .box .test{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactinfobx .box .test h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+
+}
+.copyright{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    user-select: none;
+}
+p{
+	font-size: 1.5em;
+	word-spacing: 5px;
+	text-transform: capitalize;
+}
+/* responsive site */
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 50px;
+         z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+     .menu.active{
+        left: 0;
+     }
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+        text-transform: uppercase;
+
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        padding-left: 111px;
+    }
+    .toggle.active{
+         background: url(img/close.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+font-size: 24px;
+    }
+    .contentbx{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .w50 {
+    margin-bottom: 20%;
+}
+.services .content .servicebx{
+    margin: 10px;
+}
+.contactinfo{
+    margin: 20px 0;
+}
+
+}
+@media (max-width: 280px){
+
+#banner .textbx h2{
+	font-size: 1.3em;
+}
+#banner{
+	padding: 30px 30px;
+}
+#banner h2 span{
+	font-size: 1.4em;
+}
+#banner .textbx h3{
+	font-size: 1.1em;
+}
+header .logo {
+    font-size: 1em;
+    padding: 8px 2px;
+}
+.toggle {
+    background-size: 23px;
+}
+.content h3 {
+    font-size: 1.3em;
+}
+p{
+ font-size: 1em;	
+}
+
+
+	}
