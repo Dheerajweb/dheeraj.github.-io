@@ -321,7 +321,7 @@ p{
 @media (max-width: 991px){
     header,
     header.sticky{
-        padding: 10px 50px;
+        padding: 10px 30px;
          z-index: 1000;
     }
     .menu{
@@ -431,6 +431,11 @@ header .logo {
 p{
  font-size: 0.8em;	
 }
+ header,
+    header.sticky{
+        padding: 10px 10px;
+         z-index: 1000;
+    }
 
 
 	}
