@@ -404,7 +404,7 @@ font-size: 24px;
     margin: 20px 0;
 }
 
-@media (max-width: 345px){
+@media (max-width: 395px){
 
 #banner .textbx h2{
 	font-size: 1.2em;
