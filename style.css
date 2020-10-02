@@ -404,20 +404,19 @@ font-size: 24px;
     margin: 20px 0;
 }
 
-}
-@media (max-width: 280px){
+@media (max-width: 285px){
 
 #banner .textbx h2{
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 #banner{
 	padding: 30px 30px;
 }
 #banner h2 span{
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 #banner .textbx h3{
-	font-size: 1.1em;
+	font-size: 1em;
 }
 header .logo {
     font-size: 1em;
@@ -430,7 +429,7 @@ header .logo {
     font-size: 1.3em;
 }
 p{
- font-size: 1em;	
+ font-size: 0.8em;	
 }
 
 
